@@ -1,0 +1,49 @@
+<div class="main-container">
+    <div class="mid-container">
+
+        <div class="title">
+            <h1>Youtube Download MP3</h1>
+        </div>
+    
+        <form #videoForm="ngForm" (onsubmit)="onSubmit(videoForm)">
+            <div class="input-container">
+                <input type="text"  class="form-control link_Input" aria-describedby="inputGroup-sizing-sm" placeholder="Link do Video" name="linkVideo" [(ngModel)]="linkVideo">
+                
+                <span>Quality of Sound: </span>
+                <select class="form-control select_quality" id="select-quality" name="quality"  (click)="setQuality(chosenQuality)" [(ngModel)]="chosenQuality">
+                    <option>{{quality[0]}}</option>
+                    <option>{{quality[1]}}</option>
+                    <option>{{quality[2]}}</option>
+                    <option>{{quality[3]}}</option>
+                    <option>{{quality[4]}}</option>
+                    <option>{{quality[5]}}</option>
+
+                  </select>
+            </div>
+            <div>
+               
+            </div>
+        </form>
+    
+        <div class="container-botoes">
+            <ul>
+                <li>
+                    <button class="btn btn-outline-success" (click)="baixarVideo()"> Baixar </button>
+                </li>
+                <li>
+                    <button class="btn btn-outline-danger" (click)="onSubmit(videoForm) "> Cancelar </button>
+                </li>
+            </ul>
+        </div>
+
+        <div> 
+            <label> Titulo: </label>
+            <h1>{{videoData?.title}}</h1>
+            <label>Size: </label>
+            <h1>{{videoData?.size}}</h1>
+        </div>
+
+    </div>
+
+</div>
+

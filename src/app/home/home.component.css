@@ -1,0 +1,44 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.input-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link_Input{
+    width: 20rem;
+    margin-bottom: 10px;
+}
+
+.select_quality{
+    width: 50%;
+   text-align: center;
+}
+
+.container-botoes ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.container-botoes ul li {
+    padding: 5px;
+}
+
+
